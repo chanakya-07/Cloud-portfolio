@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio showcasing web development skills, projects, and contact information.">
+    <title>John Doe - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>John Doe</h1>
+            <p>Full Stack Developer | Problem Solver | Innovator</p>
+            <a href="#projects" class="cta-btn">View My Work</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experience</a></li> <!-- Change Projects to Experience -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- About Section -->
+    <main>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a full-stack developer with a passion for creating scalable, user-friendly web applications. With a strong foundation in 
+                programming and a knack for problem-solving, I bring innovative solutions to real-world challenges.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Front-End Development</h3>
+                    <p>HTML, CSS, JavaScript, React.js, Vue.js</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Back-End Development</h3>
+                    <p>Node.js, Express.js, Django, Ruby on Rails</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Database Management</h3>
+                    <p>MySQL, MongoDB, PostgreSQL</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Frameworks</h3>
+                    <p>Git, Docker, Webpack, AWS, CI/CD</p>
+                </div>
+            </div>
+        </section>
+
+ <!-- Experience Section with Modern Design -->
+<!-- Experience Section with Modern Design -->
+<section id="experience" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">MY EXPERIENCES</h2>
+        <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+        <p class="text-gray-600 max-w-2xl mx-auto mt-4">
+          I bring a unique blend of customer service experience and leadership from my time working in the fast-paced environment of Chick-fil-A, alongside my role as a student ambassador at university, where I developed strong communication and organizational skills.
+        </p>
+      </div>
+  
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden transform transition hover:scale-105">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                <img src="assets/images/chickfila-backhouse.png" alt="Chick-fil-A" class="w-10 h-10 object-cover">
+              </div>
+              <h3 class="text-xl font-semibold">Chick-fil-A: Back of House</h3>
+            </div>
+            <p class="text-gray-700">
+              Managed kitchen operations, ensuring fast, efficient service while maintaining high standards for food safety and cleanliness. Developed time management skills in a high-pressure environment.
+            </p>
+          </div>
+        </div>
+  
+        <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden transform transition hover:scale-105">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                <img src="assets/images/student-ambassador.png" alt="Student Ambassador" class="w-10 h-10 object-cover">
+              </div>
+              <h3 class="text-xl font-semibold">Student Ambassador</h3>
+            </div>
+            <p class="text-gray-700">
+              Represented the student body, helping organize events, liaising between students and faculty, and fostering a sense of community on campus. Strengthened leadership and public speaking skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+ 
+     
+  
+  <section id="contact" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Contact Me</h2>
+        <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+        <p class="text-gray-600 max-w-2xl mx-auto mt-4">
+          Have any questions or want to work together? I’d love to hear from you! Please fill out the form below and I’ll get back to you as soon as possible.
+        </p>
+      </div>
+  
+      <div class="flex justify-center">
+        <form id="contact-form" class="bg-white p-8 shadow-lg rounded-lg w-full max-w-lg">
+          <div class="grid gap-6 mb-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-semibold text-gray-700">Your Name</label>
+                <input type="text" id="name" name="name" class="w-full p-3 mt-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500" placeholder="John Doe" required>
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-semibold text-gray-700">Your Email</label>
+                <input type="email" id="email" name="email" class="w-full p-3 mt-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500" placeholder="you@example.com" required>
+              </div>
+            </div>
+  
+            <div>
+              <label for="message" class="block text-sm font-semibold text-gray-700">Your Message</label>
+              <textarea id="message" name="message" class="w-full p-3 mt-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500" placeholder="Your message..." rows="6" required></textarea>
+            </div>
+          </div>
+  
+          <button type="submit" class="w-full py-3 px-6 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition duration-300">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
