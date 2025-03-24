@@ -24,16 +24,15 @@ jobs:
       run: |
         echo "${{ secrets.GCP_KEY }}" > "${HOME}/gcp-key.json"
         gcloud auth activate-service-account --key-file "${HOME}/gcp-key.json"
-        gcloud config set project bionic-slate-454719-n2  # Replace with your GCP project ID
+        gcloud config set project bionic-slate-454719-n2  # Your GCP project ID
 
     # Step 4: Deploy files to Google Cloud Storage
     - name: Deploy to Google Cloud Storage
       run: |
-        gsutil -m cp -r * gs://portofoliiiiiiiio/  # Replace with your GCS bucket name
+        gsutil -m cp -r * gs://portofoliiiiiiiio/  # Your GCS bucket name
         gsutil iam ch allUsers:objectViewer gs://portofoliiiiiiiio  # Grant public access
         gsutil web set -m index.html -e 404.html gs://portofoliiiiiiiio  # Set index.html as the entry point
 
     # Step 5: Verify bucket contents (Optional)
     - name: List files in the bucket
-      run: gsutil ls gs://portofoliiiiiiiio  # Replace with your bucket name
-
+      run: gsutil ls gs://portofoliiiiiiiio  # Your GCS bucket name
